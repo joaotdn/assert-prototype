@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxconn Brasil</title>
+    <script type='text/javascript' src='https://kit.fontawesome.com/5ef691494b.js?ver=1.0.68'></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+<body class="logged">
+<div class="grid-x grid-padding-x module-menu">
+
+    <div class="cell small-12 text-center">
+        <h4 class="primary-color">
+            <i class="fas fa-users"></i> USUÁRIOS
+        </h4>
+        <div class="divider"></div>
+    </div>
+
+    <div class="cell small-12 show-for-large">
+        <ul class="menu align-center text-uppercase">
+            <li><a href="#">Consultar</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Filtros</a></li>
+            <li><a href="#">Mais acessados</a></li>
+            <li><a href="#">Hierarquia</a></li>
+        </ul>
+    </div>
+
+    <div class="cell small-12 hide-for-large">
+        <select name="" id="" class="width-100 margin-0">
+            <option>Escolher uma opção</option>
+            <option>Consultar</option>
+            <option>Cadastro</option>
+            <option>Filtros</option>
+            <option>Mais acessados</option>
+            <option>Hierarquia</option>
+        </select>
+    </div>
+</div><div class="top-bar shadow stacked-for-medium align-middle" id="responsive-menu">
+
+    <div class="grid-x grid-padding-x align-middle">
+
+        <div class="cell shrink text-center large-text-left">
+            <ul class="dropdown menu display-inline-block logo-container" data-dropdown-menu>
+                <li class="menu-text text-center large-text-left">
+                    <h3 class="float-left margin-0 hide-for-large">
+                        <a href="#" data-open-menu><i class="fas fa-bars"></i></a>
+                    </h3>
+                    <a href="dashboard.html" class="display-inline-block logo">
+                        <img src="assets/img/logo.png" alt="" width="150">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cell auto text-center top-bar-input position-relative">
+            <ul class="menu show-for-large">
+                <li class="width-100">
+                    <input type="search" class="search-context display-inline-block"
+                        placeholder="O que você procura?" data-search />
+                </li>
+            </ul>
+
+            <nav class="search-pane large text-left position-fixed hide">
+                <ul class="menu vertical">
+                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Cadastro</a></li>
+                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Consulta</a></li>
+                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Editar</a></li>
+                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Remover</a></li>
+                </ul>
+            </nav>        </div>
+
+        <div class="cell shrink show-for-large">
+            <ul class="dropdown menu right" data-dropdown-menu>
+                <li class="user-notifications">
+                    <h3 class="margin-0"><a href="#" data-open="notifications-pane"><i class="fas fa-bell"></i></a></h3>
+                    <span></span>
+                </li>
+
+                <li class="has-submenu user-menu">
+                    <a href="#0"><img src="assets/img/avatar.png" alt="" width="50"></a>
+                    <ul class="submenu menu vertical" data-submenu>
+                        <li><a href="#0"><strong>Olá, João</strong></a></li>
+                        <li><a href="#0">Perfil</a></li>
+                        <li><a href="index.html">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cell auto search-mo text-right hide-for-large">
+            <ul class="menu align-right">
+                <li>
+                    <h3 class="margin-0"><a href="#" data-open-search><i class="fas fa-search"></i></a></h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div><div id="menu-offcanvas" class="position-fixed height-100">
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-12 text-center margin-bottom-2">
+            <figure><img src="assets/img/avatar.png" alt=""></figure>
+        </div>
+
+        <div class="cell small-12">
+            <ul class="menu vertical">
+                <li><a href="#" class=""><i class="fas fa-user"></i> Perfil</a></li>
+                <li><a href="#" class="" data-open="notifications-pane"><i class="fas fa-bell"></i> Notificações</a></li>
+                <li><a href="#" class=""><i class="fas fa-power-off"></i> Sair</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mask"></div>
+</div><div class="position-fixed form-search-mo shadow hide-for-large">
+    <div class="grid-container">
+        <div class="grid- grid-padding-x">
+            <div class="cell small-12">
+                <input type="search" class="width-100" placeholder="O que você procura?" data-search>
+            </div>
+        </div>
+    </div>
+
+    <button class="close-button" aria-label="Close alert" type="button" data-open-search data-close data-close-search>
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div><div class="reveal large padding-3" id="notifications-pane" data-reveal data-animation-in="slide-in-up" data-animation-out="slide-out-down">
+    <header class="width-100 text-center primary-color margin-bottom-2">
+        <h4><i class="fas fa-bell"></i> Notificações</h4>
+    </header>
+    <div class="divider"></div>
+
+    <nav class="list-notifications">
+        <div class="callout secondary">
+            <div class="media-object">
+                <div class="media-object-section padding-right-2">
+                    <h1><i class="fas fa-envelope-open-text"></i></h1>
+                </div>
+                <div class="media-object-section">
+                    <h5>This is a secondary callout</h5>
+                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                    <a href="#" class="button hollow">It's dangerous to go alone, take this.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="callout primary">
+            <div class="media-object">
+                <div class="media-object-section padding-right-2">
+                    <figure>
+                        <img src="assets/img/person2.png" alt="" width="100">
+                    </figure>
+                </div>
+                <div class="media-object-section">
+                    <h5>This is a secondary callout</h5>
+                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                    <a href="#" class="button hollow">It's dangerous to go alone, take this.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="callout warning">
+            <div class="media-object">
+                <div class="media-object-section padding-right-2">
+                    <figure>
+                        <img src="assets/img/person1.png" alt="" width="100">
+                    </figure>
+                </div>
+                <div class="media-object-section">
+                    <h5>This is a secondary callout</h5>
+                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                    <a href="#" class="button hollow">It's dangerous to go alone, take this.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="callout success">
+            <div class="media-object">
+                <div class="media-object-section padding-right-2">
+                    <h1><i class="fas fa-chart-line"></i></h1>
+                </div>
+                <div class="media-object-section">
+                    <h5>This is a secondary callout</h5>
+                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                    <a href="#" class="button hollow">It's dangerous to go alone, take this.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="width-100">
+            <a href="#" class="button expanded margin-0"><i class="fas fa-list-ul"></i> Ver todas</a>
+        </div>
+    </nav>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div><a href="#" class="close-offcanvas" data-open-menu></a>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
