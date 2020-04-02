@@ -37,12 +37,10 @@
 
             <nav class="search-pane large text-left position-fixed hide">
                 <ul class="menu vertical">
-                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Cadastro</a></li>
-                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Consulta</a></li>
-                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Editar</a></li>
-                    <li><a href="#"><strong>Clientes</strong> <i class="fas fa-angle-right"></i> Remover</a></li>
+                    <li><a href="module.pagamentos.solicitar.html"><strong>Pagamentos</strong> <i class="fas fa-angle-right"></i> Solicitar pagamento</a></li>
                 </ul>
-            </nav>        </div>
+            </nav>
+        </div>
 
         <div class="cell shrink show-for-large">
             <ul class="dropdown menu right" data-dropdown-menu>
@@ -109,7 +107,7 @@
                     <ul class="menu">
                         <li>
                             <a href="#"><i class="fas fa-users display-inline-block margin-right-1"></i>
-                                Adicinar usuário</a>
+                                Adicionar usuário</a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-chart-pie display-inline-block margin-right-1"></i>
@@ -129,19 +127,19 @@
         </div>
     </div>
 
-    <h4 data-magellan-target="clientes" id="clientes" class="cat-type margin-0 text-uppercase">
-        <strong><i class="fas fa-th"></i> Clientes</strong>
+    <h4 data-magellan-target="financeiro" id="financeiro" class="cat-type margin-0 text-uppercase">
+        <strong><i class="fas fa-th"></i> Financeiro</strong>
     </h4>
     <div class="divider margin-bottom-2"></div>
 
     <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3 list-modules margin-bottom-3">
         <div class="cell text-center">
             <div class="card shadow radius">
-                <a href="module.html" class="go-module"></a>
-                <span><a href="#" data-toggle="card-opts" class=""><i class="fas fa-ellipsis-v"></i></a></span>
-                <h1><i class="fas fa-toolbox"></i></h1>
+                <a href="module.pagamentos.html" class="go-module"></a>
+                <span><a href="#" data-toggle="card-pgopts" class=""><i class="fas fa-ellipsis-v"></i></a></span>
+                <h1><i class="fas fa-money-check-alt"></i></h1>
                 <div class="card-section">
-                    <h4>Usuários</h4>
+                    <h4>Pagamentos</h4>
                     <p>This row of cards is embedded in an X-Y Block Grid.</p>
                 </div>
             </div>
@@ -172,11 +170,11 @@
         </div>
         <div class="cell text-center">
             <div class="card shadow radius">
-                <a href="module.html" class="go-module"></a>
-                <span><a href="#" data-toggle="card-opts" class=""><i class="fas fa-ellipsis-v"></i></a></span>
-                <h1><i class="fas fa-toolbox"></i></h1>
+                <a href="module.pagamentos.html" class="go-module"></a>
+                <span><a href="#" data-toggle="card-pgopts" class=""><i class="fas fa-ellipsis-v"></i></a></span>
+                <h1><i class="fas fa-money-check-alt"></i></h1>
                 <div class="card-section">
-                    <h4>Usuários</h4>
+                    <h4>Pagamentos</h4>
                     <p>This row of cards is embedded in an X-Y Block Grid.</p>
                 </div>
             </div>
@@ -207,8 +205,8 @@
         </div>
     </div>
 
-    <h4 data-magellan-target="financeiro" id="financeiro" class="cat-type margin-0 text-uppercase">
-        <strong><i class="fas fa-th"></i> Financeiro</strong>
+    <h4 data-magellan-target="clientes" id="clientes" class="cat-type margin-0 text-uppercase">
+        <strong><i class="fas fa-th"></i> Usuários</strong>
     </h4>
     <div class="divider margin-bottom-2"></div>
 
@@ -434,13 +432,20 @@
     </div>
 </div>
 
+<div class="dropdown-pane small" id="card-pgopts" data-position="bottom" data-alignment="right" data-close-on-click="true"
+    data-dropdown data-toggler data-animate="hinge-in-from-top spin-out">
+    <ul class="menu vertical">
+        <li><small><a href="#">Solicitar pagamento</a></small></li>
+    </ul>
+</div>
+
 <div class="dropdown-pane small" id="card-opts" data-position="bottom" data-alignment="right" data-close-on-click="true"
     data-dropdown data-toggler data-animate="hinge-in-from-top spin-out">
     <ul class="menu vertical">
-        <li><a href="#">Opção 1</a></li>
-        <li><a href="#">Opção 2</a></li>
-        <li><a href="#">Opção 3</a></li>
-        <li><a href="#">Opção 4</a></li>
+        <li><small><a href="#">Opçao 1</a></small></li>
+        <li><small><a href="#">Opção 2</a></small></li>
+        <li><small><a href="#">Opção 3</a></small></li>
+        <li><small><a href="#">Opção 4</a></small></li>
     </ul>
 </div>
 <div id="menu-offcanvas" class="position-fixed height-100">
@@ -472,12 +477,13 @@
         <span aria-hidden="true">&times;</span>
     </button>
 </div><div class="float-menu position-fixed show-for-large">
-    <ul class="menu vertical" data-magellan>
-        <li><a href="#clientes">Clientes</a></li>
-        <li><a href="#financeiro">Financeiro</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-      </ul>      
-</div><footer id="footer" class="width-100 margin-top-3">
+  <ul class="menu vertical" data-magellan>
+    <li><a href="#financeiro">Financeiro</a></li>
+    <li><a href="#clientes">Clientes</a></li>
+    <li><a href="#produtos">Produtos</a></li>
+  </ul>
+</div>
+<footer id="footer" class="width-100 margin-top-3">
     <div class="grid-x grid-padding-x">
         <div class="cell small-12 text-center">
             <p><small>&copy; 2020 Foxcoon. Todos os direitos reservados.</small></p>

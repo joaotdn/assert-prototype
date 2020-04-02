@@ -69,6 +69,132 @@
     </div>
 
 </div>
+<div class="grid-container margin-top-3">
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-12">
+      <header class="page-title">
+        <h2><i class="fas fa-hand-holding-usd"></i> Solicitar pagamento</h2>
+        <div class="divider"></div>
+      </header>
+
+      <main class="page-body">
+        <form action="">
+          <div class="grid-container full">
+            <div class="grid-padding-x">
+              <div class="cell small-12 form-control">
+                <select name="" id="pg-options">
+                  <option value="">Selecionar tipo de pagamento</option>
+                  <option value="reembolso">Reembolso</option>
+                  <option value="fornecedor">Pagamento a fornecedor</option>
+                </select>
+              </div>
+
+              <div class="cell small-12 form-control pg-fornecedor hide">
+                <p class="primary"><strong><small>PRAZO MÍNIMO DE 10 DIAS?</small></strong></p>
+
+                <p class="margin-0">
+                  <label><input type="radio" class="margin-right-1" name="prazo" value="sim">Sim</label>
+                </p>
+
+                <p>
+                  <label><input type="radio" class="margin-right-1" name="prazo" value="nao">Não</label>
+                </p>
+
+                <div class="pg-continue hide">
+                  <form action="" class="form-despezas">
+                    <p>
+                      <select name="" id="select-despezas">
+                        <option value="">Despezas</option>
+                        <option value="geral">Despezas em geral</option>
+                        <option value="relatorio">Relatório de despezas</option>
+                        <option value="contrato-ass">Despesas com contratos assinados</option>
+                        <option value="contratos">Contratos</option>
+                        <option value="ativo-i">Ativo imobilizado</option>
+                      </select>
+                    </p>
+                  
+                    <div class="form-body hide">
+                      <p>
+                        <select name="" id="">
+                          <option value="">Tipos de despezas</option>
+                          <optgroup label="Despezas de ocupação">
+                            <option value="">Energia</option>
+                            <option value="">Aluguel</option>
+                            <option value="">Condomínio</option>
+                          </optgroup>
+                          <optgroup label="Despesas de Marketing e Trade">
+                            <option value="">Publicidade</option>
+                            <option value="">Propagandas</option>
+                            <option value="">Eventos</option>
+                          </optgroup>
+                          <optgroup label="Folha de pagamento">
+                            <option value="">FGTS</option>
+                            <option value="">Contribuição assistencial</option>
+                            <option value="">Vale Refeição</option>
+                          </optgroup>
+                        </select>
+                      </p>
+                  
+                      <p class="hide">
+                        <label for="data_pagamento">Data prevista para pagamento</label>
+                        <input type="text" placeholder="dd/mm/aaaa" id="data_pagamento">
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="cell small-12 form-control pg-reembolso hide">
+                <p class="primary text-uppercase"><strong><small>Dados da despeza</small></strong></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div class="reveal" id="user-pg-error" data-reveal>
+  <h5 class="warning"><i class="fas fa-exclamation-triangle"></i> Usuário sem permissão para ignorar vencimento</h1>
+
+    <p class="lead"><small>Negociar data de vencimento</small></p>
+
+  <p class="search-user position-relative display-inline-block width-100">
+    <input type="search" class="margin-0" placeholder="Buscar fornecedor">
+
+    <div class="user-result hide position-absolute">
+      <ul class="menu vertical">
+        <li class="display-inline-block width-100"><small><i class="fas fa-user-tie"></i> <b>João da Silva</b></small></li>
+      </ul>
+    </div>
+  </p>
+
+  <div class="form-user-msg hide">
+    <p>
+      <textarea name="" id="user-msg" cols="30" rows="10" placeholder="Enviar mensagem para o fornecedor selecionado"></textarea>
+    </p>
+
+    <p>
+      <a href="#" class="button send-user-msg expanded" data-open="exampleModal3">Enviar mensagem</a>
+    </p>
+  </div>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="exampleModal3" data-reveal>
+  <h5 class="success"><i class="fas fa-check"></i> Email enviado com sucesso</h5>
+  <p>
+    <a href="module.pagamentos.html" class="button expanded">Concluir</a>
+  </p>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
 <div id="menu-offcanvas" class="position-fixed height-100">
     <div class="grid-x grid-padding-x">
         <div class="cell small-12 text-center margin-bottom-2">
